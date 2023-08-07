@@ -62,7 +62,7 @@
             height: 100%;
             width: 100%;
         }
-        button {
+        a.tiles {
             background-color: #4CAF50; /* Green */
             border: solid black 10px;
             color: red;
@@ -93,19 +93,16 @@
         #listimage{
             background: white center url("https://cdn-icons-png.flaticon.com/512/181/181627.png") no-repeat;
         }
-        button > a{
-            all:unset;
-        }
-        button:active{
+
+        a.tiles:active {
             filter: blur(4px);
             -webkit-filter: blur(4px);
             transition: 0.2s;
         }
-        button:disabled{
+        a.tiles:disabled{
             transition:0.2s;
         }
-        button:hover {
-            color: rgb(204, 0, 255);
+        a.tiles:hover {
             font-size: larger;
             cursor: pointer;
             opacity: 0.7;
@@ -119,10 +116,6 @@
             flex-direction: column;
 
         }
-        button {
-            width: 100%;
-            margin: auto;
-        }
         }
     </style>
 </head>
@@ -133,11 +126,11 @@
 
     <div class="flex-container">
 
-        <button id="beerimage"><a href="/randombeer">Random Beer</a></button>
+        <a class="tiles" id="beerimage" href="/randombeer">Random Beer</a>
 
-        <button id="searchimage"><a href="/">Search</a></button>
+        <a class="tiles" id="searchimage" href="/">Search</a>
 
-        <button id="listimage"><a href="/">All Beers</a></a></button>
+        <a class="tiles" id="listimage" href="/">All Beers</a>
         
 
     </div>
