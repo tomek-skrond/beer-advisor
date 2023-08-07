@@ -115,5 +115,9 @@ func GetRandomBeer() (Beer, error) {
 
 	beerRandom := beerList[0]
 
+	if beerRandom.ImageUrl == "" {
+		beerRandom.ImageUrl = "https://cdn-icons-png.flaticon.com/512/3362/3362651.png"
+	}
+
 	return beerRandom, nil
 }

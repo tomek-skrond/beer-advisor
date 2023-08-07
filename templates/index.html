@@ -42,7 +42,8 @@
             justify-content: center;
             background-color: #f1f1f1;
             flex-direction:row;
-            
+            height: 100%;
+            width: 100%;
         }
 
         .flex-container > div {
@@ -61,7 +62,9 @@
             padding: 10px;
             height: 100%;
             width: 100%;
+            align-self: flex-end;
         }
+        
         a.tiles {
             background-color: #4CAF50; /* Green */
             border: solid black 10px;
@@ -111,10 +114,13 @@
         @media screen and (max-width: 600px) {
         .flex-container {
             flex-direction: column;
+            align-items: center;
         }
         .flex-container > div{
             flex-direction: column;
-
+        }
+        a.tiles{
+            width: 100%;
         }
         }
     </style>
@@ -145,7 +151,6 @@
             <p style="font-size: medium;">Tomasz Skrond</p>
             <p style="font-size: small;">Github: <a href="https://www.google.com">tomek-skrond</a></p>
             <p style="font-size: small;">Linkedin: <a href="https://www.google.com">/in</a></p>
-
         </div>
     </div>
 
